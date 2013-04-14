@@ -40,3 +40,7 @@ var app = {
         completeElem.className = completeElem.className.split('hide').join('');
     }
 };
+
+function beepMe(){
+	Navigator.notification.beep(3);
+};
