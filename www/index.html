@@ -36,7 +36,7 @@ under the License.
 			app.initialize();
 		</script>
 		<div data-role="page" id="home">
-			<div data-role="header">
+			<div data-role="header"  style="min-height: 45px;">
 				<h1>Header</h1>
 			</div>
 			<div data-role="content">
@@ -58,10 +58,13 @@ under the License.
 		</div>
 		
 		<div data-role="page" id="general" data-title="General">
-			<div data-role="header"> <h1>I'm header </h1></div>
+			<div data-role="header">
+				<h1>I'm header </h1>
+				<a href="#" data-icon="plus" data-iconpos="notext"></a>
+			</div>
 			<div data-role="content">
 				I'm the famous content <br>
-				<a href="#" onclick="beepMe()">BeepMe</a>
+				<a href="#" onclick="beepMe()" data-role="button">BeepMe</a>
 				<a href="#home">Go HOME !</a>
 			</div>
 			<div data-role="footer" data-position="fixed"><h2>I'm footer</h2></div>
